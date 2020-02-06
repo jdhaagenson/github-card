@@ -1,5 +1,6 @@
 {
   "name": "github-card",
+  "homepage": "https://jdhaagenson.gitlab.io/github-card"
   "version": "0.1.0",
   "private": true,
   "dependencies": {
