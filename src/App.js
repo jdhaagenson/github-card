@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
+import {Button} from 'semantic-ui-react';
 
 const githubUserURL = githubUsername =>
   `https://api.github.com/users/${githubUsername}`
@@ -26,17 +27,17 @@ const githubUserURL = githubUsername =>
 
 render() {
   return (
-    <>
-      <button onClick={this.handleToggle}>Toggle User</button>
+    <React.Fragment>
+      <Button onClick={this.handleToggle}>Toggle User</Button>
       {this.state.active && (
-        <>
+        <React.Fragment>
           <img src={this.state.user.avatar_url} alt="user profile"></img>
           <h1>{this.state.user.name}</h1>
           <p>Location: {this.state.location}</p>
           <p>Bio: {this.state.user.bio}</p>
-        </>
+        </React.Fragment>
       )}
-    </>
+    </React.Fragment>
   );
 
 }
