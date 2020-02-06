@@ -43,7 +43,7 @@ render() {
             </Card.Description>
           </Card.Content>
           <Card.Content extra>
-            <a>
+            <a href={this.state.user.followers_url}>
               <Icon name='user'/>
               {this.state.user.followers}
             </a>
